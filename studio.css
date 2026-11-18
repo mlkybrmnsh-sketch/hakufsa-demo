@@ -427,3 +427,13 @@ body { font-family: Heebo, Arial, sans-serif; }
   .studio-reel__tools button { width: 40px; height: 40px; }
   .studio-reel h2.slant { line-height: 1.12; }
 }
+/* Keep the first contact action within a short laptop viewport. */
+@media (min-width: 721px) and (max-height: 780px) {
+  .cover-grid { padding-block: 18px; }
+  .cover-copy { padding-block: 14px; }
+  .cover h1 { font-size: clamp(76px, min(9vw, 15.6svh), 118px); }
+  .mantra { margin: 15px 0 4px; font-size: 20px; }
+  .cover-intro { margin-top: 15px; font-size: 18px; }
+  .cover-actions { margin-top: 18px; }
+  .cover-frame { min-height: clamp(360px, 67svh, 495px); }
+}
